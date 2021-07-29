@@ -2,13 +2,14 @@
 from random import randint
 
 class WordFinder:
-    """open a file and read it line-by-line to create a list of words, then print a random word from the list
+    """Class that allows to find a random word from a word list
     Attributes:
     ___________
         filepath: str
             a path to a file on disk that contains words
     """
     def __init__(self,filepath):
+        """Open a file and read it line-by-line to create a list of words, then return a number of words in created word list"""
         self.filepath = filepath
        
         self.word_list = []
